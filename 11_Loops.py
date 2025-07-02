@@ -1,0 +1,30 @@
+#while loop
+
+# x = 1
+# while(x<=10):
+#     print(x)
+#     x=x+1
+
+# # for loop
+# for x in range(4,11):
+#     print(x)
+
+# for m in range(1,13):
+#     print(m)
+
+days= ("Mon","Tue","Wed","Thur","Fri","Sat","Sun")
+year= ("Jan","Feb","March","Apr","May","Jun","July","Aug","Sep","Oct","Nov","Dec")
+for y in year:
+ print("\n",y,"\n")
+ for d in days:
+     if(d== "Sun"):
+         break
+     print(d)
+ 
+
+# days= ("Mon","Tue","Wed","Thur","Fri","Sat","Sun")
+
+# for d in days:
+#      if(d== "Sat"):
+#          continue  #skip the specific String etc
+#      print(d)
