@@ -30,5 +30,13 @@
 #      print(d)
 
 
-for x in range(0, 21, 2):
+# for x in range(0, 21, 2):
+#     print(x)
+
+name = "Shayan"
+for x in name:
+    print(x)
+
+name = ["Shayan", "Bilal", "Muskan"]
+for x in name:
     print(x)
