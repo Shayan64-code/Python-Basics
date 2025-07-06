@@ -1,1 +1,1 @@
-print("free" in txt)
+print(list2)

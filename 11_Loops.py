@@ -45,3 +45,8 @@ count = 1
 while(count <= 10):
     print(count)
     count +=1
+
+for x in range(6):
+  print(x)
+else:
+  print("Finally finished!")
