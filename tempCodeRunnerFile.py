@@ -1,1 +1,1 @@
-print(list2)
+or

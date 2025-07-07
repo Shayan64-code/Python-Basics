@@ -37,7 +37,7 @@ name = "Shayan"
 for x in name:
     print(x)
 
-name = ["Shayan", "Bilal", "Muskan"]
+name = ["Shayan", "Bilal", "Aman"]
 for x in name:
     print(x)
 
@@ -48,5 +48,11 @@ while(count <= 10):
 
 for x in range(6):
   print(x)
-else:
-  print("Finally finished!")
+else:                                #else can be used with for (if for loop is finished then else)
+  print("Finally finished!") 
+
+for x in range(6):
+  if x == 3: break
+  print(x)
+else:                                 #now else will not print because loop is break(and not finished)
+  print("Finally finished!")         
