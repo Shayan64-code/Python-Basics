@@ -68,7 +68,7 @@
 ############ List Comprehension
 ### List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.
 
-list5 = ["Papaya", "Grapes", "Apple", "Orange", "Kiwi"]
+# list5 = ["Papaya", "Grapes", "Apple", "Orange", "Kiwi"]
 
 # newlist1 = []
 # for x in list5:
@@ -93,16 +93,26 @@ list5 = ["Papaya", "Grapes", "Apple", "Orange", "Kiwi"]
 # newlist = ['hello' for x in list5]
 # print(newlist)
 
-fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+# fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
 
-newlist = [x for x in fruits if x != "banana"]                     #These types are all filtering comprehensions
-print(newlist)
+# newlist = [x for x in fruits if x != "banana"]                     #These types are all filtering comprehensions
+# print(newlist)
 
-newlist = [x if x != "banana" else "orange" for x in fruits]       #These are conditional comprehensions #Syntax differ
-print(newlist)
+# newlist = [x if x != "banana" else "orange" for x in fruits]       #These are conditional comprehensions #Syntax differ
+# print(newlist)
 
-# i = 0
-# while(i < len(list4)):
-#     print(list4[i])
-#     i = i + 1
+############                                                  Sort List
 
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+# thislist.sort()                                      #By default order a to z
+# print(thislist)
+
+thislist2 = [100, 50, 65, 82, 23]
+# thislist2.sort()                                     #By default order ascending
+# print(thislist2)
+
+thislist.sort(reverse= True)                      #This is used to reverse order 
+thislist2.sort(reverse= thislist)                 #reverse by indicating the thislist
+
+print(thislist)
+print(thislist2)

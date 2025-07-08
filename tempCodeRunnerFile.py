@@ -1,1 +1,2 @@
-or
+thislist.sort()
+# print(thislist)
