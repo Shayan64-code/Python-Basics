@@ -100,19 +100,3 @@
 
 # newlist = [x if x != "banana" else "orange" for x in fruits]       #These are conditional comprehensions #Syntax differ
 # print(newlist)
-
-############                                                  Sort List
-
-thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
-# thislist.sort()                                      #By default order a to z
-# print(thislist)
-
-thislist2 = [100, 50, 65, 82, 23]
-# thislist2.sort()                                     #By default order ascending
-# print(thislist2)
-
-thislist.sort(reverse= True)                      #This is used to reverse order 
-thislist2.sort(reverse= thislist)                 #reverse by indicating the thislist
-
-print(thislist)
-print(thislist2)
