@@ -46,5 +46,36 @@ thislist = ["banana", "Orange", "Kiwi", "cherry"]      #case sensitive first A t
 # thislist.sort(key= str.lower)                          #Case insensitive using lower(doesnot lower alphabets)
 # print(thislist)
 
-thislist.reverse()                                       #Just revese the whole list
-print(thislist)
+# thislist.reverse()                                       #Just revese the whole list
+# print(thislist)
+
+######################## List Copy method
+
+# thislist = ["banana", "Orange", "Kiwi", "cherry"]
+# mylist = thislist.copy()                            #Copy Using copy() method
+# print(mylist)
+# #### Or
+# mylist = list(thislist)                             #Using list() method
+# #### Or
+# mylist = thislist[:]                                #Using Slice[:] Operator]
+
+########## Joining or Concatenate
+
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+
+# list3 = list1 + list2
+# print(list3)
+###### Or
+# for x in list2:
+#    list1.append(x)
+
+# print(list1)
+###### Or
+# list1.extend(list2)
+# print(list1)
+
+print(thislist.count("Orange"))                        #using count() method
+
+sentence = "Python is fun. Python is easy."
+print(sentence.count("Python"))  # counts whole word "Python"
