@@ -1,4 +1,2 @@
-for x in list2:
-#    list1.append(x)
-
-# print(list1)
+set1.difference_update(set2)               # can update original set just like set1
+# print(set1)
