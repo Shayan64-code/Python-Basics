@@ -157,3 +157,11 @@ myfamily2 = {
     
 # ✅ Common Use Case: Grouping items in a dictionary
 
+words = ["apple", "banana", "apricot", "blueberry", "avocado"]
+grouped = {}
+
+for word in words:
+    first_letter = word[0]
+    grouped.setdefault(first_letter, []).append(word)     #complex example from chatgpt with setdefault
+
+print(grouped)
