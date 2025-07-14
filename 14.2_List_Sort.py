@@ -78,4 +78,4 @@ list2 = [1, 2, 3]
 print(thislist.count("Orange"))                        #using count() method
 
 sentence = "Python is fun. Python is easy."
-print(sentence.count("Python"))  # counts whole word "Python"
+print(sentence.count("Python"))                        # counts whole word "Python"(2 times)

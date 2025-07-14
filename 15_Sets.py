@@ -79,7 +79,7 @@ set4 = {"apple", "bananas", "cherry"}
 # myset = set1|set2|set3|set4                  # '|' is also used for joining sets. but only sets with sets
 # print(myset) 
 
-# set1.update(set2)
+# set1.update(set2)                             # '|=' is also used for update
 # print(set1)
 
 set1 = {"apple", "banana", "cherry"}
@@ -91,7 +91,7 @@ set2 = {"google", "microsoft", "apple"}
 # set3 = set1 & set2                       # &: Operator is also used for intersection. but only sets with sets
 # print(set3)
 
-# set1.intersection_update(set2)             #can update the original set with just like set1
+# set1.intersection_update(set2)             #can update the original set with just like set1 (&=)
 # print(set1) 
 
 # set3 = set1.difference(set2)               #difference: print item that are not present in set2 from set1
@@ -100,7 +100,7 @@ set2 = {"google", "microsoft", "apple"}
 # set3 = set1 - set2                         # - :same as difference but only with sets
 # print(set3)
 
-# set1.difference_update(set2)               # can update original set just like set1
+# set1.difference_update(set2)               # can update original set just like set1 (-=)
 # print(set1)
 
 # set3 = set1.symmetric_difference(set2)     #print only items that are not present in both or multiple sets(set1 and set2)
@@ -109,6 +109,6 @@ set2 = {"google", "microsoft", "apple"}
 set3 = set1 ^ set2                           # ^: used for symmetric difference but with only sets.
 print(set3)
 
-set1.symmetric_difference_update(set2)       #change the set1 permanantaly.
+set1.symmetric_difference_update(set2)       #change the set1 permanantaly. (^=)
 print(set1)
 
