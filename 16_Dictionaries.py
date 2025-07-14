@@ -114,7 +114,7 @@ myfamily = {
         "Name":"Shayan",
         "Age": 19
     },
-    "Child2":{
+    "Child2": {
         "Name":"Ahtesham",            ###Nested Dictionary
         "Age": 21
     },
@@ -141,8 +141,19 @@ Child3 = {
     "Age": 40
 }
 myfamily2 = {
-    "child1": Child1,
+    "Child1": Child1,
     "Child2": Child2,            ###Or like this
     "Child3": Child3
 }
-print(myfamily2["child1"]["Name"])
+# print(myfamily2["Child1"]["Name"])
+
+# for x, obj in myfamily2.items():
+#     print(x, myfamily2[x])               #also iterate like this in nested dictionary 
+
+# for x, obj in myfamily2.items():
+#     print(x)                             #also iterate like this for every particular obj
+#     for y in obj:
+#      print(y + ":", obj[y])
+    
+# ✅ Common Use Case: Grouping items in a dictionary
+
