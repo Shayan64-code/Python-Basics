@@ -100,3 +100,54 @@
 
 # newlist = [x if x != "banana" else "orange" for x in fruits]       #These are conditional comprehensions #Syntax differ
 # print(newlist)
+
+# def appendItem(itemName, itemList = []):     #itemList = [] mutable list not safe to use
+#     itemList.append(itemName)
+#     return itemList
+
+
+# print(appendItem('notebook'))
+# print(appendItem('pencil'))
+# print(appendItem('eraser'))
+
+# def appendItem(itemName):                    #inside function everytime new list will be created
+#     itemList = []
+#     itemList.append(itemName)
+#     return itemList
+
+
+# print(appendItem('notebook'))
+# print(appendItem('pencil'))
+# print(appendItem('eraser'))
+
+# itemList= []                             #global list every changes done in it
+# def appendItem(itemName):
+#     itemList.append(itemName)
+#     return itemList
+
+# print(appendItem('notebook'))
+# print(appendItem('pencil'))
+# print(appendItem('eraser'))
+
+# def myfun(x, y):
+#     x[0] = 1
+#     y[1] = 2
+#                                        #changing list using function (Pass by reference)(set, list, dict are mutable)
+# mylist = [10, 20, 30, 40, 50]         
+# myfun(mylist, mylist)
+# print(mylist)
+
+# def change_number(x):
+#     x = 10  # Changes local copy only    (Pass by value)(int, float, str, bool, tuple are immutable)
+#     return x
+
+# num = 5
+# change_number(num)
+# print(num)
+
+def fun(s):
+    s += 'GFG'  
+    print("Inside Function", s)
+
+s = "I love Geeksforgeeks"
+fun(s)

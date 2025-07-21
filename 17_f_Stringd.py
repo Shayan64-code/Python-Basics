@@ -1,0 +1,1 @@
+print(f"{k} == {val}")                 #print the key and value between them

@@ -106,9 +106,19 @@ set2 = {"google", "microsoft", "apple"}
 # set3 = set1.symmetric_difference(set2)     #print only items that are not present in both or multiple sets(set1 and set2)
 # print(set3)
 
-set3 = set1 ^ set2                           # ^: used for symmetric difference but with only sets.
-print(set3)
+# set3 = set1 ^ set2                           # ^: used for symmetric difference but with only sets.
+# print(set3)
 
-set1.symmetric_difference_update(set2)       #change the set1 permanantaly. (^=)
-print(set1)
+# set1.symmetric_difference_update(set2)       #change the set1 permanantaly. (^=)
+# print(set1)
+
+# set1 = set(["Geeks", "For", "Geeks"])
+# print(set1)
+
+# # loop through set
+# for i in set1:
+#     print(i, end=" ")
+    
+# # check if item exist in set    
+# print("Geeks" in set1)
 

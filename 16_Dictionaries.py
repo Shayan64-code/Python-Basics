@@ -165,3 +165,12 @@ for word in words:
     grouped.setdefault(first_letter, []).append(word)     #complex example from chatgpt with setdefault
 
 print(grouped)
+
+
+def addItemToDictionary(itemName, quantity, itemList = {}):
+    itemList[itemName] = quantity
+    return itemList
+                                                 #dictionary with function
+print(addItemToDictionary('notebook', 4))                   
+print(addItemToDictionary('pencil', 1))
+print(addItemToDictionary('eraser', 1))
