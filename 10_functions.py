@@ -150,7 +150,7 @@ a = 1  # Global variable
 def f():
     print('f():', a)  # Uses global a
 
-def g():
+def g():                                         #doesnot change globally
     a = 2  # Local variable shadows global
     print('g():', a)
 

@@ -127,24 +127,33 @@
 #     def Inner2(z):
 #         return x + z
     
-#     return Inner1, Inner2
+#     return Inner1(), Inner2()
 
 # Inner1_Cl, Inner2_Cl = Outer(5)        #Inner1_Cl = Inner1 and Inner2_Cl = Inner2
 # print(Inner1_Cl(3))
 # print(Inner2_Cl(5))
 
-#Example 3
-def Outer(x):
+# #Example 3
+# def Outer(x):
 
-    def Inner1(y):
+#     def Inner1(y):
 
-        def Inner2(z):
-            return x + y + z
-        return Inner2
-    return Inner1
+#         def Inner2(z):
+#             return x + y + z
+#         return Inner2()
+#     return Inner1()
 
-Inner1_Cl = Outer(10)
-Inner2_Cl = Inner1_Cl(20)
-result = Inner2_Cl(5)
+# Inner1_Cl = Outer(10)
+# Inner2_Cl = Inner1_Cl(20)
+# result = Inner2_Cl(5)
 
-print(result)
+# print(result)
+
+def process_data(data):
+
+    def clean_data():
+        return [item.strip() for item in data]      #remove spaces
+    
+    return clean_data()
+
+print(process_data([" Spaces is Everywhere ", " Please remove them "]))
