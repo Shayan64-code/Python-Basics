@@ -145,24 +145,38 @@
 
 ######another example
 
-a = 1  # Global variable
+# a = 1  # Global variable
 
-def f():
-    print('f():', a)  # Uses global a
+# def f():
+#     print('f():', a)  # Uses global a
 
-def g():                                         #doesnot change globally
-    a = 2  # Local variable shadows global
-    print('g():', a)
+# def g():                                         #doesnot change globally
+#     a = 2  # Local variable shadows global
+#     print('g():', a)
 
-def h():
-    global a
-    a = 3  # Modifies global a
-    print('h():', a)
+# def h():
+#     global a
+#     a = 3  # Modifies global a
+#     print('h():', a)
 
-print('global:', a)  
-f()                  
-print('global:', a) 
-g()                 
-print('global:', a)  
-h()                  
-print('global:', a)
+# print('global:', a)  
+# f()                  
+# print('global:', a) 
+# g()                 
+# print('global:', a)  
+# h()                  
+# print('global:', a)
+
+#Recursive Example 2:
+
+def fibonacci(n):
+    if n == 0:
+        return 0
+    
+    elif n == 1:
+        return 1
+    
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+    
+print(fibonacci(8))
