@@ -122,3 +122,11 @@ set2 = {"google", "microsoft", "apple"}
 # # check if item exist in set    
 # print("Geeks" in set1)
 
+S = {}    #This will make empty dictionary
+print(type(S))
+S = set()  #This will create empty set
+print(type(S))
+S = []   #This will make empty list
+print(type(S))
+S = ()   #This will make empty tuple
+print(type(S))
