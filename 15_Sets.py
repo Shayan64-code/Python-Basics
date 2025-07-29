@@ -122,11 +122,26 @@ set2 = {"google", "microsoft", "apple"}
 # # check if item exist in set    
 # print("Geeks" in set1)
 
-S = {}    #This will make empty dictionary
-print(type(S))
-S = set()  #This will create empty set
-print(type(S))
-S = []   #This will make empty list
-print(type(S))
-S = ()   #This will make empty tuple
-print(type(S))
+# S = {}    #This will make empty dictionary
+# print(type(S))
+# S = set()  #This will create empty set
+# print(type(S))
+# S = []   #This will make empty list
+# print(type(S))
+# S = ()   #This will make empty tuple
+# print(type(S))
+
+# City = {"Karachi", "Islamabad", "Quetta", "Peshawar"}
+# Country = {"Pakistan", "Bangladesh", "Afghanistan", "India"}
+
+# disjoint_set = City.isdisjoint(Country)               #disjoint is used to check whether both set has intersection
+# print(disjoint_set)                                   #values if not than it is True.
+
+Country1 = {"Pakistan", "Bangladesh", "Afghanistan", "India"}
+Country2 = {"Pakistan", "India"}
+
+Superset = Country1.issuperset(Country2)
+print(Superset)
+
+Subset = Country2.issubset(Country1)
+print(Subset)
