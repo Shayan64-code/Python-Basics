@@ -37,8 +37,8 @@ a = input("Write number between 5 and 9: ")
 
 try:
     a = int(a)
-    if a > 5 and a < 10:      #change in statement with and
-        raise ValueError("This is a value error") 
+    if a > 5 and a < 10:      #change in statement with 'and'
+        raise ValueError("This is a value error")       #If the error is raised it will go in the except statement.   
         print("This is if value: ", a) 
     else:
         print("This is else value: ",a)
