@@ -68,20 +68,20 @@
 ############ List Comprehension
 ### List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.
 
-# list5 = ["Papaya", "Grapes", "Apple", "Orange", "Kiwi"]
+list5 = ["Papaya", "Grapes", "Apple", "Orange", "Kiwi"]
+
+newlist = [x for x in list5 if x != "Apple"]
+print(newlist)
 
 # newlist1 = []
 # for x in list5:
 #     if "a" in x:                                            
 #         newlist1.append(x)
 # print(newlist1)
-
+  
 # newlist = [print(x) for x in list5 if "a" in x]                #This is list comprehension ## writing whole code of above in one line
 #                   #OR
 # newlist = [x for x in list5 if "a" in x or "A" in x]
-# print(newlist)
-
-# newlist = [x for x in list5 if x != "Apple"]
 # print(newlist)
 
 # newlist = [x for x in range(10) if x < 5]
@@ -145,9 +145,9 @@
 # change_number(num)
 # print(num)
 
-def fun(s):
-    s += 'GFG'  
-    print("Inside Function", s)
+# def fun(s):
+#     s += 'GFG'  
+#     print("Inside Function", s)
 
-s = "I love Geeksforgeeks"
-fun(s)
+# s = "I love Geeksforgeeks"
+# fun(s)
