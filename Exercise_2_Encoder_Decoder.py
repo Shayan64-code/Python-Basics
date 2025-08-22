@@ -52,6 +52,7 @@ print(result)
 
 
 # #new discovery(string slicing)
+a = "shayans"
 # print(a[0:7:2])   #start : stop : step  #after each, second string is print (saas)
 
 # a = "shayan"
@@ -61,3 +62,4 @@ print(result)
 # a = "shayan"
 # print(a[::-1]) ##:: -> take whole strings -1 move backwards
 
+print(a)
